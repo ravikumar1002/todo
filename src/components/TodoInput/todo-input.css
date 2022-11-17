@@ -1,23 +1,28 @@
+.todo-create-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .input-box {
-    width: 50%;
+  width: 50%;
   padding: 12px 20px;
-  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
-.btn-create{
-    padding: 0.5rem 1rem ;
-    margin: 0 1rem;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
-    line-height: 1.8rem;
-    cursor: pointer;
+.btn-create {
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.btn-block{
-    cursor: not-allowed;
+.btn-block {
+  cursor: not-allowed;
 }

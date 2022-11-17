@@ -9,7 +9,7 @@ const TodoInput = () => {
   const userContext = useUserData();
 
   return (
-    <div>
+    <div className="todo-create-box">
       <input
         type="text"
         placeholder="Type Something..."
@@ -20,7 +20,9 @@ const TodoInput = () => {
         value={typedText}
       />
       <button
-        className={typedText.length > 0 ? "btn-create " : "btn-create btn-block"}
+        className={
+          typedText.length > 0 ? "btn-create " : "btn-create btn-block"
+        }
         onClick={() => {
           if (typedText.length > 0) {
             userContext?.dispatch({
@@ -28,7 +30,7 @@ const TodoInput = () => {
                 ...userContext?.state.todo,
                 {
                   task: typedText,
-                  createdAt: new Date().toISOString(),
+                  createdAt: new Date().toISOString().slice(0, 10),
                   status: TaskStatus.IN_PROGRESS,
                   id: uuid,
                 },

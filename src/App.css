@@ -1,7 +1,14 @@
+.todo-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
 
-.todo-container{
-    display: flex;
-    gap: 2rem;
-    margin: 2rem;
-    flex-wrap: wrap;
+.empty-page {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+  width: 100%;
 }
