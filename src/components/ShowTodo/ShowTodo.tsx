@@ -1,7 +1,9 @@
 import { useUserData } from "../../context/userDataContext";
 import "./show-todo.css";
-// import DeleteIcon from '@mui/icons-material/Delete';
 import { TaskStatus } from "../../context/userDataContext";
+import ReactLogo from "../../assets/check-svgrepo-com.svg";
+import DeleteLogo from "../../assets/delete-button-svgrepo-com.svg";
+import CircleLogo from "../../assets/circle-svgrepo-com.svg";
 
 const ShowTodo = () => {
   const userContext = useUserData();
@@ -59,11 +61,12 @@ const ShowTodo = () => {
                     completeTask(todo.id, currentdate);
                   }}
                 >
-                  Mark as completed
+                    <img src={CircleLogo} className="svg-icon-height" /> 
+                  Mark as complete
                 </button>
               )}
               {todo.status === TaskStatus.COMPLETED && (
-                <button className="btn">Completed</button>
+                <button className="btn"> <img src={ReactLogo} className="svg-icon-height" /> Completed</button>
               )}
 
               <button
@@ -72,8 +75,10 @@ const ShowTodo = () => {
                   deleteTask(todo.id);
                 }}
               >
-                {/* <DeleteIcon/> */}
-                <span>Delete</span>
+                <img src={DeleteLogo} className="svg-icon-height" /> 
+                <span>
+                   Delete
+                </span>
               </button>
             </div>
           </div>

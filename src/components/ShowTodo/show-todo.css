@@ -43,3 +43,8 @@
   flex-direction: column;
   text-align: center;
 }
+
+.svg-icon-height{
+    height: 1rem;
+    margin: 0 0.3rem;
+}

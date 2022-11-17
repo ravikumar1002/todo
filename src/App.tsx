@@ -13,7 +13,7 @@ function App() {
         {userContext && userContext.state?.todo?.length > 0 ? (
           <ShowTodo />
         ) : (
-          <p className="empty-page">No todo</p>
+          <p className="empty-page">No Items</p>
         )}
       </div>
     </div>
