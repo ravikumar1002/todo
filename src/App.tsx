@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <TodoInput />
       <div className="todo-container">
-        {userContext?.state?.todo.length > 0 ? (
+        {userContext && userContext.state?.todo?.length > 0 ? (
           <ShowTodo />
         ) : (
           <p className="empty-page">No todo</p>
