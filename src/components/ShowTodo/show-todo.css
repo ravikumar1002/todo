@@ -1,0 +1,8 @@
+
+.todo-wrapper{
+    width: 14rem;
+    height: auto;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+}
